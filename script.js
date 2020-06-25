@@ -16,7 +16,7 @@ pickup_opts = [
 ];
 
 fetch(
-    "http://cors-anywhere.herokuapp.com/https://devotionalium.com/api/v2?lang=en&" +
+    "https://devotionalium.com/api/v2?lang=en&" +
         `date=${randomDate(new Date(2019, 0, 1), new Date())}`
 )
     .then((response) => response.json())
