@@ -1,0 +1,43 @@
+* {
+    font-family: "Playfair Display", serif;
+    color: #333333;
+}
+
+body {
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+.jumbotron {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+    html {
+        font-size: 1rem;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    html {
+        font-size: 1.3rem;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    html {
+        font-size: 1.6rem;
+    }
+}
+@media screen and (min-width: 1200px) {
+    html {
+        font-size: 2rem;
+    }
+}
