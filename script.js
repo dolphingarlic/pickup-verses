@@ -24,7 +24,7 @@ fetch(
         document.getElementById("pickup").innerHTML =
             pickup_opts[Math.floor(Math.random() * pickup_opts.length)];
         document.getElementById("verse").innerHTML =
-            json[Math.floor(Math.random() * 3)][
+            `${json[Math.floor(Math.random() * 3)][
                 Math.random() > 0.9 ? "textOriginal" : "text"
-            ];
+            ]} (${json["reference"]})`;
     });
