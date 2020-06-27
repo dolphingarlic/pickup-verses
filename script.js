@@ -35,11 +35,14 @@ fetch(
 
         let verse = `${
             json[idx][Math.random() > 0.9 ? "textOriginal" : "text"]
-        } (${json[idx]["reference"]})`;
+        }`;
         if (verse.slice(0, 3) === "But") verse = verse.slice(3);
         if (verse.slice(0, 3) === "And") verse = verse.slice(3);
         if (verse.slice(0, 3) === "For") verse = verse.slice(3);
         if (verse.slice(0, 7) === "Because") verse = verse.slice(7);
 
         document.getElementById("verse").innerHTML = verse;
+        document.getElementById(
+            "source"
+        ).innerHTML = `(${json[idx]["reference"]})`;
     });
