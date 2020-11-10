@@ -28,6 +28,9 @@ fetch(
 )
     .then((response) => response.json())
     .then((json) => {
+        let loader = document.getElementById("lds-ripple");
+        loader.parentNode.removeChild(loader);
+
         document.getElementById("pickup").innerHTML =
             pickup_opts[Math.floor(Math.random() * pickup_opts.length)];
 
